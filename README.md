@@ -1,5 +1,6 @@
 # EasyAndroidRE
 
+## Setup
 Scripts to easily modify apk files.
 
 1. Get the latest apk tool
@@ -19,3 +20,11 @@ keytool -genkey -v -keystore ~/.android/debug.keystore -alias signkey -keyalg RS
 5. Make any changes in the folder
 
 6. Resign and compile using compile.sh
+
+
+## Things you can add.
+To enable debugging the following to the manifest <application>
+```
+android:debuggable = "true"
+```
+
