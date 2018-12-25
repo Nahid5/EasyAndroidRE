@@ -21,6 +21,10 @@ keytool -genkey -v -keystore ~/.android/debug.keystore -alias signkey -keyalg RS
 
 6. Resign and compile using compile.sh
 
+You can also use apksigner to sign the apk
+```
+apksigner sign --ks  ~/.android/debug.keystore --ks-key-alias <KEY_ALIAS> <REPACKAGED_PACK_LOCATION>.apk
+```
 
 ## Things you can add.
 To enable debugging the following to the manifest <application>
